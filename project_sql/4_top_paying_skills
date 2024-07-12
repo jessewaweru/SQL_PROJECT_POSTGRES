@@ -1,0 +1,25 @@
+--Problem statement: Top skills based on salary
+--Look at the average salary associated with each skill for Data Analyst positions
+--Focused on roles with specified salaries, regardless of location
+--Why? To identify how different skills impact slary levels for Data Analyst and which ones are at the top
+
+SELECT
+    skills,
+    ROUND(AVG(salary_year_avg),2) AS avg_salary_per_skill
+FROM
+    job_postings_fact
+JOIN
+    skills_job_dim
+    ON  job_postings_fact.job_id = skills_job_dim.job_id
+JOIN
+    skills_dim
+    ON skills_job_dim.skill_id = skills_dim.skill_id
+WHERE
+    job_postings_fact.job_title_short = 'Data Analyst'
+    AND job_postings_fact.salary_year_avg IS NOT NULL
+GROUP BY
+    skills
+ORDER BY
+    avg_salary_per_skill DESC
+LIMIT
+    25
