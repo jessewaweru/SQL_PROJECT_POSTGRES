@@ -190,10 +190,12 @@ LIMIT
     25
 ```
 #### **Insights I gained from the problem statement:**
-- 
+- All the top skills average more than $115,000 per year. The skills vary in different fields such as Big Data and Cloud infalstructure i.e. terraform, cassandra,kafka,couchbase and vmware, Machine Learning and A.I. i.e. keras, pytorch and tensorflow, and DevOps and Automation i.e. gitlab and puppet.
+- The highest paying skill is svn, which is a version control system, at $400,000.
+
 ### 5.What are the most optimal skills to learn?
-Finally, I wanted to showcase which skills are in-demanded and high-paying i.e. optimal skills. I wanted columns that showcased the skill id, skill count, demand count for each skill queried and average salary for each skill. I generated two CTEs from the previous problem statement 3 and 4 that I named skills_demand avg_salary.Made sure to confimr that the query filtered based on Data Analyst roles, remote positions and salary values weren't NULL.
-I also limited the demand count to be greater than 10 for more accurate reults. I ordered the final result by the highest average slary for the skill and demand count while also limting the query to include only the top 25.
+Finally, I wanted to showcase which skills are in-demanded and high-paying i.e. optimal skills. I wanted columns that showcased the skill id, skill count, demand count for each skill queried and average salary for each skill. I generated two CTEs from the previous problem statement 3 and 4 that I named skills_demand and avg_salary. Made sure to confirm that the query filtered based on Data Analyst roles, remote positions and salary values weren't NULL.
+I also limited the demand count to be greater than 10 for more accurate reults. I ordered the final result by the highest average salary for the skill and demand count while also limiting the query to include only the top 25.
 
 ```SQL
 WITH skills_demand AS(
@@ -257,6 +259,9 @@ ORDER BY
 LIMIT
     25;
 ```
+#### **Insights I gained from the problem statement:**
+- The top 5 skills that are higly paid include go, confluence,hadoop,snowflake,and azure.These skills have relatively high average salaries with moderately high demand counts, indicating that these skills are specialized and highly valued.
+- What's also noteworthy is that the skills that take up a demand of more than 100 are tied to Data Analytics i.e. SQL, excel, python,tableau and r.
 
 # What I learned
 
