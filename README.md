@@ -1,11 +1,11 @@
 # Introduction
-The Datase i used is for the Job market! I specifically focused on Data Analyst roles, exploring problem statements such as Top-paying jobs, Top in-demand skills, and best optimal skills for Data analysts i.e. where high demand meets high salary. 
+The Datase I used is for the Job market! I specifically focused on Data Analyst roles, exploring problem statements such as Top-paying jobs, Top in-demand skills, and best optimal skills for Data analysts i.e. where high demand meets high salary. 
 
 Here ar the SQL queires i used to generate my various insights:
 [project_sql_postgres](/project_sql/)
 
 # Background
-I was interested in knowing how the job market for Data Analyst looks like in a more consise way. I decided to use this dataset that showcases insights such as job titles, salaries, locations, companies offering them,skills associated with each job posting and more. I got the dataset from a Youtube channel of a data analyst called Lukebarousse.
+I was interested in knowing how the job market for Data Analyst looks like in a more consise way. I decided to use this dataset that showcases insights such as job titles, salaries, locations, companies offering them,skills associated with each job posting and more. I got the dataset from a YouTube channel of a data analyst called Lukebarousse.
 
 ### Problem statements I decided to use to answer my SQL queries
 1. What are the top-paying data analyst jobs?
@@ -19,7 +19,7 @@ The tools I used to generate my insights for the project include the following:
 - **SQL**
 - **PostgreSQL :** My ideal database management that is linked to my code editor.
 - **Visual Studio Code**: My ideal code editor for SQL queries
-- **Git and GitHub:** Needed a version control to showcase the steps and changes  made as I progressed with my analysis. Also ideal for sharing and collaboration purposes.
+- **Git and GitHub:** Needed a version control to showcase the steps and changes  made as I progressed with my analysis. It's also ideal for sharing and collaboration purposes.
 
 # The Analysis
 I approached every problem statement individually seeking to get a consise answer for every question
