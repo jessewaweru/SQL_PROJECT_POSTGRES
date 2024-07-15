@@ -53,6 +53,10 @@ LIMIT
 #### **Insights I gained from the problem statement:**
 - Salaries range from $165,000 dollars a year to $650,000. The companies offering the job postings are very different. The job roles are also very diverse even when categorised solely for Data Analysts.
 
+
+![Top paying jobs](<assets/top paying jobs.png>)
+*Bar graph showcasing the top 20 salaries for Data analysts and their specific roles*
+
 ### 2.What skills are required for these top-paying jobs?
 Next, I generate a query that would showcase the top skills required for the top paying jobs for Data Analysts. I took the sql query from my first problem statement and pasted it in the second question and wrapped it in a CTE. I then joined the new CTE with the skills csv file to generate the skills attached to each top paying job on the market together with the company name and job title.
 
@@ -97,6 +101,67 @@ ORDER BY
 #### **Insights I gained from the problem statement:**
 - Some of the skills required for these high paying Data Analyst jobs include tools such as SQL,PYTHON,PANDAS,R,EXCEL, POWER BI, AND TABLEAU. They also include database management skills in AWS,AZURE AND ORACLE including many more in fields such as specialised data warehouse management i.e. snowflake.
 - Some of these skills are also tied to a specific job role with a specific company for example AT&T rquire 8 different skills for the Associate Director- Data Insights position, same with Pinterest Job Advertising, UCLA Health Careers and many more.
+
+| job_id | job_title                            | job_location | job_schedule_type | salary_year_avg | company_name                            | skills      |
+|--------|--------------------------------------|--------------|-------------------|-----------------|-----------------------------------------|-------------|
+| 552322 | Associate Director- Data Insights    | Anywhere     | Full-time         | 255829.5        | AT&T                                   | sql         |
+| 552322 | Associate Director- Data Insights    | Anywhere     | Full-time         | 255829.5        | AT&T                                   | python      |
+| 552322 | Associate Director- Data Insights    | Anywhere     | Full-time         | 255829.5        | AT&T                                   | r           |
+| 552322 | Associate Director- Data Insights    | Anywhere     | Full-time         | 255829.5        | AT&T                                   | azure       |
+| 552322 | Associate Director- Data Insights    | Anywhere     | Full-time         | 255829.5        | AT&T                                   | databricks  |
+| 552322 | Associate Director- Data Insights    | Anywhere     | Full-time         | 255829.5        | AT&T                                   | aws         |
+| 552322 | Associate Director- Data Insights    | Anywhere     | Full-time         | 255829.5        | AT&T                                   | pandas      |
+| 552322 | Associate Director- Data Insights    | Anywhere     | Full-time         | 255829.5        | AT&T                                   | pyspark     |
+| 552322 | Associate Director- Data Insights    | Anywhere     | Full-time         | 255829.5        | AT&T                                   | jupyter     |
+| 552322 | Associate Director- Data Insights    | Anywhere     | Full-time         | 255829.5        | AT&T                                   | excel       |
+| 552322 | Associate Director- Data Insights    | Anywhere     | Full-time         | 255829.5        | AT&T                                   | tableau     |
+| 552322 | Associate Director- Data Insights    | Anywhere     | Full-time         | 255829.5        | AT&T                                   | power bi    |
+| 552322 | Associate Director- Data Insights    | Anywhere     | Full-time         | 255829.5        | AT&T                                   | powerpoint  |
+| 99305  | Data Analyst, Marketing              | Anywhere     | Full-time         | 232423.0        | Pinterest Job Advertisements            | sql         |
+| 99305  | Data Analyst, Marketing              | Anywhere     | Full-time         | 232423.0        | Pinterest Job Advertisements            | python      |
+| 99305  | Data Analyst, Marketing              | Anywhere     | Full-time         | 232423.0        | Pinterest Job Advertisements            | r           |
+| 99305  | Data Analyst, Marketing              | Anywhere     | Full-time         | 232423.0        | Pinterest Job Advertisements            | hadoop      |
+| 99305  | Data Analyst, Marketing              | Anywhere     | Full-time         | 232423.0        | Pinterest Job Advertisements            | tableau     |
+| 1021647 | Data Analyst (Hybrid/Remote)         | Anywhere     | Full-time         | 217000.0        | Uclahealthcareers                       | sql         |
+| 1021647 | Data Analyst (Hybrid/Remote)         | Anywhere     | Full-time         | 217000.0        | Uclahealthcareers                       | crystal     |
+| 1021647 | Data Analyst (Hybrid/Remote)         | Anywhere     | Full-time         | 217000.0        | Uclahealthcareers                       | oracle      |
+| 1021647 | Data Analyst (Hybrid/Remote)         | Anywhere     | Full-time         | 217000.0        | Uclahealthcareers                       | tableau     |
+| 1021647 | Data Analyst (Hybrid/Remote)         | Anywhere     | Full-time         | 217000.0        | Uclahealthcareers                       | flow        |
+| 168310 | Principal Data Analyst (Remote)      | Anywhere     | Full-time         | 205000.0        | SmartAsset                             | sql         |
+| 168310 | Principal Data Analyst (Remote)      | Anywhere     | Full-time         | 205000.0        | SmartAsset                             | python      |
+| 168310 | Principal Data Analyst (Remote)      | Anywhere     | Full-time         | 205000.0        | SmartAsset                             | go          |
+| 168310 | Principal Data Analyst (Remote)      | Anywhere     | Full-time         | 205000.0        | SmartAsset                             | snowflake   |
+| 168310 | Principal Data Analyst (Remote)      | Anywhere     | Full-time         | 205000.0        | SmartAsset                             | pandas      |
+| 168310 | Principal Data Analyst (Remote)      | Anywhere     | Full-time         | 205000.0        | SmartAsset                             | numpy       |
+| 168310 | Principal Data Analyst (Remote)      | Anywhere     | Full-time         | 205000.0        | SmartAsset                             | excel       |
+| 168310 | Principal Data Analyst (Remote)      | Anywhere     | Full-time         | 205000.0        | SmartAsset                             | tableau     |
+| 168310 | Principal Data Analyst (Remote)      | Anywhere     | Full-time         | 205000.0        | SmartAsset                             | gitlab      |
+| 731368 | Director, Data Analyst - HYBRID      | Anywhere     | Full-time         | 189309.0        | Inclusively                            | sql         |
+| 731368 | Director, Data Analyst - HYBRID      | Anywhere     | Full-time         | 189309.0        | Inclusively                            | python      |
+| 731368 | Director, Data Analyst - HYBRID      | Anywhere     | Full-time         | 189309.0        | Inclusively                            | azure       |
+| 731368 | Director, Data Analyst - HYBRID      | Anywhere     | Full-time         | 189309.0        | Inclusively                            | aws         |
+| 731368 | Director, Data Analyst - HYBRID      | Anywhere     | Full-time         | 189309.0        | Inclusively                            | oracle      |
+| 731368 | Director, Data Analyst - HYBRID      | Anywhere     | Full-time         | 189309.0        | Inclusively                            | snowflake   |
+| 731368 | Director, Data Analyst - HYBRID      | Anywhere     | Full-time         | 189309.0        | Inclusively                            | tableau     |
+| 731368 | Director, Data Analyst - HYBRID      | Anywhere     | Full-time         | 189309.0        | Inclusively                            | power bi    |
+| 731368 | Director, Data Analyst - HYBRID      | Anywhere     | Full-time         | 189309.0        | Inclusively                            | sap         |
+| 731368 | Director, Data Analyst - HYBRID      | Anywhere     | Full-time         | 189309.0        | Inclusively                            | jenkins     |
+| 731368 | Director, Data Analyst - HYBRID      | Anywhere     | Full-time         | 189309.0        | Inclusively                            | bitbucket   |
+| 731368 | Director, Data Analyst - HYBRID      | Anywhere     | Full-time         | 189309.0        | Inclusively                            | atlassian   |
+| 731368 | Director, Data Analyst - HYBRID      | Anywhere     | Full-time         | 189309.0        | Inclusively                            | jira        |
+| 731368 | Director, Data Analyst - HYBRID      | Anywhere     | Full-time         | 189309.0        | Inclusively                            | confluence  |
+| 310660 | Principal Data Analyst, AV Performance Analysis | Anywhere     | Full-time         | 189000.0        | Motional                               | sql         |
+| 310660 | Principal Data Analyst, AV Performance Analysis | Anywhere     | Full-time         | 189000.0        | Motional                               | python      |
+| 310660 | Principal Data Analyst, AV Performance Analysis | Anywhere     | Full-time         | 189000.0        | Motional                               | r           |
+| 310660 | Principal Data Analyst, AV Performance Analysis | Anywhere     | Full-time         | 189000.0        | Motional                               | git         |
+| 310660 | Principal Data Analyst, AV Performance Analysis | Anywhere     | Full-time         | 189000.0        | Motional                               | bitbucket   |
+| 310660 | Principal Data Analyst, AV Performance Analysis | Anywhere     | Full-time         | 189000.0        | Motional                               | atlassian   |
+| 310660 | Principal Data Analyst, AV Performance Analysis | Anywhere     | Full-time         | 189000.0        | Motional                               | jira        |
+| 310660 | Principal Data Analyst, AV Performance Analysis | Anywhere     | Full-time         | 189000.0        | Motional                               | confluence  |
+| 1749593 | Principal Data Analyst                 | Anywhere     | Full-time         | 186000.0        | SmartAsset                             | sql         |
+| 1749593 | Principal Data Analyst                 | Anywhere     | Full-time         | 186000.0        | SmartAsset                             | python      |
+| 1749593 | Principal Data Analyst                 | Anywhere     | Full-time         | 186000.0        | SmartAsset
+
 
 ### 3.What skills are in most demand for data analysts?
 This was one of the main problem statements that i was curious to find out. I wanted to identify which skills are highly demanded by companies for Data Analyst roles. I approached it in two ways: option one using a CTE and option two using purely JOIN statements.
@@ -164,6 +229,9 @@ LIMIT
 #### **Insights I gained from the problem statement:**
 - The most in-demand skills for Data Analaysts include in order: SQL, Excel,Python,Tableau and Power Bi
 
+![top demanded skills](<assets/top demanded skills.png>)
+*Pie chart showcasing the top 5 most demanded skills for Data anlysts*
+
 ### 4.Which skills are associated with higher salaries?
 I also wanted to identify which skills are associated with the highest salaries. I joined three tables together with an INNER JOIN to retrieve the average salary for each skill and whcih ones were at the top while also limiting the queries to salary values that weren't NULL. To simplify the query, I limited the result to show the top 25.
 
@@ -192,6 +260,9 @@ LIMIT
 #### **Insights I gained from the problem statement:**
 - All the top skills average more than $115,000 per year. The skills vary in different fields such as Big Data and Cloud infalstructure i.e. terraform, cassandra,kafka,couchbase and vmware, Machine Learning and A.I. i.e. keras, pytorch and tensorflow, and DevOps and Automation i.e. gitlab and puppet.
 - The highest paying skill is svn, which is a version control system, at $400,000.
+
+![top paying skills](<assets/top paying skills.png>)
+*scatterplot chart showcasing the top paying skills to have as a data analyst*
 
 ### 5.What are the most optimal skills to learn?
 Finally, I wanted to showcase which skills are in-demanded and high-paying i.e. optimal skills. I wanted columns that showcased the skill id, skill count, demand count for each skill queried and average salary for each skill. I generated two CTEs from the previous problem statement 3 and 4 that I named skills_demand and avg_salary. Made sure to confirm that the query filtered based on Data Analyst roles, remote positions and salary values weren't NULL.
@@ -263,6 +334,43 @@ LIMIT
 - The top 5 skills that are higly paid include go, confluence,hadoop,snowflake,and azure.These skills have relatively high average salaries with moderately high demand counts, indicating that these skills are specialized and highly valued.
 - What's also noteworthy is that the skills that take up a demand of more than 100 are tied to Data Analytics i.e. SQL, excel, python,tableau and r.
 
-# What I learned
+| skill_id | skills      | demand_count | avg_salary_per_skill |
+|----------|-------------|--------------|----------------------|
+| 8        | go          | 27           | 115319.89            |
+| 234      | confluence  | 11           | 114209.91            |
+| 97       | hadoop      | 22           | 113192.57            |
+| 80       | snowflake   | 37           | 112947.97            |
+| 74       | azure       | 34           | 111225.10            |
+| 77       | bigquery    | 13           | 109653.85            |
+| 76       | aws         | 32           | 108317.30            |
+| 4        | java        | 17           | 106906.44            |
+| 194      | ssis        | 12           | 106683.33            |
+| 233      | jira        | 20           | 104917.90            |
+| 79       | oracle      | 37           | 104533.70            |
+| 185      | looker      | 49           | 103795.30            |
+| 2        | nosql       | 13           | 101413.73            |
+| 1        | python      | 236          | 101397.22            |
+| 5        | r           | 148          | 100498.77            |
+| 78       | redshift    | 16           | 99936.44             |
+| 187      | qlik        | 13           | 99630.81             |
+| 182      | tableau     | 230          | 99287.65             |
+| 197      | ssrs        | 14           | 99171.43             |
+| 92       | spark       | 13           | 99076.92             |
+| 13       | c++         | 11           | 98958.23             |
+| 7        | sas         | 63           | 98902.37             |
+| 186      | sas         | 63           | 98902.37             |
+| 61       | sql server  | 35           | 97785.73             |
+| 9        | javascript  | 20           | 97587.00             |
+
+
 
 # Conclusions
+After dissecting the dataset through SQL and plotting some of my findings using Tableau, i was able to conclude the following:
+
+1. **Skills associated with Data Analytics:** The top skills every Data analyst or aspiring Data analyst should focus more on as per the data are SQL, Excel, Python,Tableau and Power Bi.
+2. **Top paying jobs:** Top paying Data analyst jobs can range anywhere between $160,000 to 350,000 per year in terms of salary with the highest salary at $650,000.
+3. **Potential for increased salaries:** If a Data analyst wants to increase their chances of bumping up their salary, they should consider adding the following top 5 skills to their tookit as they are very lucrative- SVN, Solidarity, Couchbase,Dataroot and Golang.
+4. Optimal skills: SQL leads in demand for Data analyst while offering a relatively high salary average and Go leads in high salary average while also having a moderalty high demand count on the job market.
+
+# What I learned
+The project helped me immensely improve my SQL skills while at the same time very informative as well. It was a great stepping stone on my path in Data analytics.
