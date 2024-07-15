@@ -370,7 +370,7 @@ After dissecting the dataset through SQL and plotting some of my findings using 
 1. **Skills associated with Data Analytics:** The top skills every Data analyst or aspiring Data analyst should focus more on as per the data are SQL, Excel, Python,Tableau and Power Bi.
 2. **Top paying jobs:** Top paying Data analyst jobs can range anywhere between $160,000 to 350,000 per year in terms of salary with the highest salary at $650,000.
 3. **Potential for increased salaries:** If a Data analyst wants to increase their chances of bumping up their salary, they should consider adding the following top 5 skills to their tookit as they are very lucrative- SVN, Solidarity, Couchbase,Dataroot and Golang.
-4. Optimal skills: SQL leads in demand for Data analyst while offering a relatively high salary average and Go leads in high salary average while also having a moderalty high demand count on the job market.
+4. **Optimal skills:** SQL leads in demand for Data analyst while offering a relatively high salary average and Go leads in high salary average while also having a moderalty high demand count on the job market.
 
 # What I learned
 The project helped me immensely improve my SQL skills while at the same time very informative as well. It was a great stepping stone on my path in Data analytics.
