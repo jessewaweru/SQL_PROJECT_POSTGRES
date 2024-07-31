@@ -365,7 +365,7 @@ LIMIT
 
 
 # Conclusions
-After dissecting the dataset through SQL and plotting some of my findings using Tableau, i was able to conclude the following:
+After dissecting the dataset through SQL and plotting some of my findings using Tableau, I was able to conclude the following:
 
 1. **Skills associated with Data Analytics:** The top skills every Data analyst or aspiring Data analyst should focus more on as per the data are SQL, Excel, Python,Tableau and Power Bi.
 2. **Top paying jobs:** Top paying Data analyst jobs can range anywhere between $160,000 to 350,000 per year in terms of salary with the highest salary at $650,000.
