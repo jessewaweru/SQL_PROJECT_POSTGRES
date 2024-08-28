@@ -1,7 +1,7 @@
 # Introduction
 The Dataset I used is for the Job market! I specifically focused on Data Analyst roles, exploring problem statements such as Top-paying jobs, Top in-demand skills, and best optimal skills for Data analysts i.e. where high demand meets high salary. 
 
-Here ar the SQL queires I used to generate my various insights:
+Here ar the SQL queires i used to generate my various insights:
 [project_sql_postgres](/project_sql/)
 
 # Background
