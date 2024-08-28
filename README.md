@@ -1,11 +1,11 @@
 # Introduction
-The Datase I used is for the Job market! I specifically focused on Data Analyst roles, exploring problem statements such as Top-paying jobs, Top in-demand skills, and best optimal skills for Data analysts i.e. where high demand meets high salary. 
+The Dataset I used is for the Job market! I specifically focused on Data Analyst roles, exploring problem statements such as Top-paying jobs, Top in-demand skills, and best optimal skills for Data analysts i.e. where high demand meets high salary. 
 
-Here ar the SQL queires i used to generate my various insights:
+Here ar the SQL queires I used to generate my various insights:
 [project_sql_postgres](/project_sql/)
 
 # Background
-I was interested in knowing how the job market for Data Analyst looks like in a more consise way. I decided to use this dataset that showcases insights such as job titles, salaries, locations, companies offering them,skills associated with each job posting and more. I got the dataset from a YouTube channel of a data analyst called Lukebarousse.
+I was interested in knowing how the job market for Data Analyst looks like in a more consise way. I decided to use this dataset that showcases insights such as job titles, salaries, locations, companies offering them,skills associated with each job posting and more. I got the dataset from a YouTube channel of a data analyst called Luke barousse.
 
 ### Problem statements I decided to use to answer my SQL queries
 1. What are the top-paying data analyst jobs?
@@ -24,8 +24,8 @@ The tools I used to generate my insights for the project include the following:
 # The Analysis
 I approached every problem statement individually seeking to get a consise answer for every question
 ### 1.What are the top-paying data analyst jobs?
-I created a query that woulc showcase the companies that offered the highest paying jobs for Data analysts together with the salary avg for the job posting.Furthermore, I filtered the query to include remote jobs and salary values that were not nulll. I joined two separate tables that had the job posting, salaries and the companies on opposite sides.
-To avoid having  alarge query i limited the results by the top 20.
+I created a query that would showcase the companies that offered the highest paying jobs for Data analysts together with the salary average for the job posting.Furthermore, I filtered the query to include remote jobs and salary values that were not nulll. I joined two separate tables that had the job posting, salaries and the companies on opposite sides.
+To avoid having  a large query, I limited the results to the top 20.
 
 ```SQL
 SELECT
@@ -51,13 +51,13 @@ LIMIT
     20;
 ```
 #### **Insights I gained from the problem statement:**
-- Salaries range from $165,000 dollars a year to $650,000. The companies offering the job postings are very different. The job roles are also very diverse even when categorised solely for Data Analysts.
+- Salaries range from $165,000 dollars a year to $650,000. The companies offering the job postings are very different. The job roles are also diverse even when categorised solely for Data Analysts.
 
 
 ![Top paying jobs](<assets/top paying jobs.png>)
 *Bar graph showcasing the top 20 salaries for Data analysts and their specific roles*
 
-### 2.What skills are required for these top-paying jobs?
+### 2. What skills are required for these top-paying jobs?
 Next, I generate a query that would showcase the top skills required for the top paying jobs for Data Analysts. I took the sql query from my first problem statement and pasted it in the second question and wrapped it in a CTE. I then joined the new CTE with the skills csv file to generate the skills attached to each top paying job on the market together with the company name and job title.
 
 ```SQL
@@ -100,7 +100,7 @@ ORDER BY
 
 #### **Insights I gained from the problem statement:**
 - Some of the skills required for these high paying Data Analyst jobs include tools such as SQL,PYTHON,PANDAS,R,EXCEL, POWER BI, AND TABLEAU. They also include database management skills in AWS,AZURE AND ORACLE including many more in fields such as specialised data warehouse management i.e. snowflake.
-- Some of these skills are also tied to a specific job role with a specific company for example AT&T rquire 8 different skills for the Associate Director- Data Insights position, same with Pinterest Job Advertising, UCLA Health Careers and many more.
+- Some of these skills are also tied to a specific job role with a specific company for example AT&T require 8 different skills for the Associate Director- Data Insights position, same with Pinterest Job Advertising, UCLA Health Careers and many more.
 
 | job_id | job_title                            | job_location | job_schedule_type | salary_year_avg | company_name                            | skills      |
 |--------|--------------------------------------|--------------|-------------------|-----------------|-----------------------------------------|-------------|
@@ -164,8 +164,7 @@ ORDER BY
 
 
 ### 3.What skills are in most demand for data analysts?
-This was one of the main problem statements that i was curious to find out. I wanted to identify which skills are highly demanded by companies for Data Analyst roles. I approached it in two ways: option one using a CTE and option two using purely JOIN statements.
-For both I specified the query to filter out the results to include remote positions only.
+One of my primary research objectives was to identify the most in-demand skills for data analyst roles. I pursued this question using two approaches: a common table expression (CTE) and JOIN statements. For both approaches, I filtered the results to focus exclusively on remote positions.
 
 ```SQL
 -- 1. With a CTE
@@ -233,7 +232,7 @@ LIMIT
 *Pie chart showcasing the top 5 most demanded skills for Data anlysts*
 
 ### 4.Which skills are associated with higher salaries?
-I also wanted to identify which skills are associated with the highest salaries. I joined three tables together with an INNER JOIN to retrieve the average salary for each skill and whcih ones were at the top while also limiting the queries to salary values that weren't NULL. To simplify the query, I limited the result to show the top 25.
+Wanted to identify which skills are associated with the highest salaries. I joined three tables together with an INNER JOIN to retrieve the average salary for each skill and which ones were at the top while also limiting the queries to salary values that weren't NULL. To simplify the query, I limited the result to show the top 25.
 
 ```SQL
 SELECT
@@ -262,7 +261,7 @@ LIMIT
 - The highest paying skill is svn, which is a version control system, at $400,000.
 
 ![top paying skills](<assets/top paying skills.png>)
-*scatterplot chart showcasing the top paying skills to have as a data analyst*
+*Scatterplot chart showcasing the top paying skills to have as a data analyst*
 
 ### 5.What are the most optimal skills to learn?
 Finally, I wanted to showcase which skills are in-demanded and high-paying i.e. optimal skills. I wanted columns that showcased the skill id, skill count, demand count for each skill queried and average salary for each skill. I generated two CTEs from the previous problem statement 3 and 4 that I named skills_demand and avg_salary. Made sure to confirm that the query filtered based on Data Analyst roles, remote positions and salary values weren't NULL.
@@ -365,7 +364,7 @@ LIMIT
 
 
 # Conclusions
-After dissecting the dataset through SQL and plotting some of my findings using Tableau, i was able to conclude the following:
+After dissecting the dataset through SQL and plotting some of my findings using Tableau, I was able to conclude the following:
 
 1. **Skills associated with Data Analytics:** The top skills every Data analyst or aspiring Data analyst should focus more on as per the data are SQL, Excel, Python,Tableau and Power Bi.
 2. **Top paying jobs:** Top paying Data analyst jobs can range anywhere between $160,000 to 350,000 per year in terms of salary with the highest salary at $650,000.
